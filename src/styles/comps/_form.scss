@@ -1,0 +1,114 @@
+.form {
+  font-size: 1.6rem;
+
+  &__group {
+    & > label {
+      display: block;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__input {
+    &[type="number"],
+    &[type="text"] {
+      font-family: inherit;
+      width: 100%;
+      font-size: 1.2em;
+      padding: 1rem 1.4rem;
+      border-radius: var(--border-radius);
+      border: var(--border);
+      color: inherit;
+      transition: all 0.3s;
+
+      &:focus {
+        outline: none;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        border-color: rgb(206, 206, 206);
+      }
+    }
+  }
+}
+
+.radio {
+  &__group {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+    label {
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+
+      &:hover {
+        background-color: var(--color-secondary);
+        color: #fff;
+      }
+
+      &:not(:last-child) {
+        border-right: var(--border);
+      }
+
+      span {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        transition: all 0.2s;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked + span {
+        color: #fff;
+        background: linear-gradient(
+          to right bottom,
+          var(--color-secondary),
+          var(--color-primary),
+          var(--color-secondary)
+        );
+      }
+    }
+  }
+}
+
+.range-slider {
+  $thumb-size: 3rem;
+
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  border-radius: var(--border-radius);
+  background: rgb(219, 159, 159);
+  outline: none;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: $thumb-size;
+    height: $thumb-size;
+    border-radius: 50%;
+    background: radial-gradient(var(--color-secondary), var(--color-primary));
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: $thumb-size;
+    height: $thumb-size;
+    border-radius: 50%;
+    background: radial-gradient(var(--color-secondary), var(--color-primary));
+    cursor: pointer;
+  }
+}

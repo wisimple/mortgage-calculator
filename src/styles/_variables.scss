@@ -1,0 +1,12 @@
+:root {
+  --color: 255, 50%;
+  --l: 50%;
+
+  --color-primary: hsl(var(--color), var(--l));
+  --color-secondary: hsl(var(--color), calc(var(--l) + 10%));
+
+  --color-text: #3d3d3d;
+
+  --border-radius: 3px;
+  --border: 1px solid #d4d4d4;
+}
