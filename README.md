@@ -1,12 +1,12 @@
 # Mortgage Calculator
 
-Live demo <https://github.com>
+Live demo <https://calculate-mortgage.netlify.app>
 
-###Installation
+### Installation
 
 1. Clone or download the project
 2. Go to project directory
 3. `$ npm install`
 4. `$ npm start`
 
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+![](https://raw.githubusercontent.com/wisimple/mortgage-calculator/master/public/images/screenshot.png)
