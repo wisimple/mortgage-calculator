@@ -25,6 +25,13 @@
       color: inherit;
       transition: all 0.3s;
 
+      & ~ .error {
+        color: rgb(235, 68, 68);
+        font-size: 1.3rem;
+        padding: 1rem;
+        line-height: 2;
+      }
+
       &:focus {
         outline: none;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -89,10 +96,6 @@
   border-radius: var(--border-radius);
   background: rgb(219, 159, 159);
   outline: none;
-
-  &:hover {
-    opacity: 1;
-  }
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;

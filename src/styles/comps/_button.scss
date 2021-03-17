@@ -1,7 +1,6 @@
 .button {
   padding: 1.2rem;
   min-width: 14rem;
-  outline: none;
   border: none;
   background: linear-gradient(to right bottom, var(--color-primary), var(--color-secondary));
   border-radius: var(--border-radius);
@@ -10,6 +9,10 @@
   font-size: inherit;
   cursor: pointer;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.185);
+
+  &:focus {
+    outline: none;
+  }
 
   &:disabled {
     opacity: 0.7;

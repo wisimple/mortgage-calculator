@@ -1,6 +1,6 @@
 # Mortgage Calculator
 
-Live demo <https://calculate-mortgage.netlify.app>
+Live demo <a href="https://calculate-mortgage.netlify.app/" target="_blank">https://calculate-mortgage.netlify.app</a>
 
 ### Installation
 
@@ -9,4 +9,4 @@ Live demo <https://calculate-mortgage.netlify.app>
 3. `$ npm install`
 4. `$ npm start`
 
-![](https://raw.githubusercontent.com/wisimple/mortgage-calculator/master/public/images/screenshot.png)
+![](https://raw.githubusercontent.com/wisimple/mortgage-calculator/master/public/images/screenshot.png =400x)
