@@ -93,6 +93,7 @@ class MortagegeCalculator extends Component<{}, State> {
                 id="propertyValue"
                 name="propertyValue"
                 className="form__input"
+                suffix=" AED"
                 allowDecimals={false}
                 defaultValue={propertyValue}
                 onValueChange={(value, name) => {
