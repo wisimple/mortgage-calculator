@@ -9,4 +9,4 @@ Live demo <a href="https://calculate-mortgage.netlify.app/" target="_blank">http
 3. `$ npm install`
 4. `$ npm start`
 
-![](https://raw.githubusercontent.com/wisimple/mortgage-calculator/master/public/images/screenshot.png =400x)
+<img src="https://raw.githubusercontent.com/wisimple/mortgage-calculator/master/public/images/screenshot.png" width="400" alt="Screenshot" />
