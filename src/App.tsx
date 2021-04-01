@@ -1,11 +1,11 @@
 import { Component } from "react";
-import MortagegeCalculator from "./components/MortagegeCalculator";
+import MortgageCalculator from "./components/MortgageCalculator";
 
 class App extends Component {
   render() {
     return (
       <div className="container">
-        <MortagegeCalculator />
+        <MortgageCalculator />
       </div>
     );
   }

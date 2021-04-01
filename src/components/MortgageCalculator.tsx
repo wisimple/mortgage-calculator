@@ -87,7 +87,7 @@ class MortagegeCalculator extends Component<{}, State> {
       <div className="card">
         <div className="card__body">
           <form className="form" onSubmit={this.handleOnSubmit}>
-            <div className="form__group">
+            <div className="form__item">
               <label htmlFor="propertyValue">Property value</label>
               <CurrencyInput
                 id="propertyValue"
@@ -107,14 +107,13 @@ class MortagegeCalculator extends Component<{}, State> {
               />
               {errors?.propertyValue && <span className="error">{errors.propertyValue}</span>}
             </div>
-            <div className="form__group">
+            <div className="form__item">
               <label htmlFor="downpaymentAmount">
                 <div className="flex justify-space-between">
                   <span>
                     Downpayment amount{" "}
                     <small>
-                      ({number2MoneyString((parseInt(propertyValue) * parseInt(downpaymentAmount)) / 100)}{" "}
-                      AED)
+                      ({number2MoneyString((parseInt(propertyValue) * parseInt(downpaymentAmount)) / 100)} AED)
                     </small>
                   </span>
                   <span className="color-primary">
@@ -138,7 +137,7 @@ class MortagegeCalculator extends Component<{}, State> {
                 }}
               />
             </div>
-            <div className="form__group">
+            <div className="form__item">
               <label htmlFor="duration">
                 <div className="flex justify-space-between">
                   <span>Loan duration</span>
@@ -163,7 +162,7 @@ class MortagegeCalculator extends Component<{}, State> {
                 ))}
               </div>
             </div>
-            <div className="form__group">
+            <div className="form__item">
               <label htmlFor="interestRate">Interest rate</label>
               <CurrencyInput
                 id="interestRate"
@@ -183,7 +182,7 @@ class MortagegeCalculator extends Component<{}, State> {
               />
               {errors?.interestRate && <span className="error">{errors.interestRate}</span>}
             </div>
-            <div className="form__group">
+            <div className="form__item">
               <div className="flex justify-space-between items-center">
                 <span className="amount-text">
                   <span>
@@ -194,9 +193,7 @@ class MortagegeCalculator extends Component<{}, State> {
                 <button
                   className="button"
                   type="submit"
-                  disabled={
-                    loading || errors?.interestRate ? true : false || errors?.propertyValue ? true : false
-                  }
+                  disabled={loading || errors?.interestRate ? true : false || errors?.propertyValue ? true : false}
                 >
                   {loading ? "saving" : "SAVE"}
                 </button>
